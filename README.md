@@ -146,9 +146,6 @@ flutter pub get
 ---
 
 ## Requisitos
-Flutter 3.41.9 (stable)
-Dart 3.11.5 (stable)
-Android SDK 36.1.0+
 
 - Flutter **3.41.9 (stable)**
 - Dart **3.11.5 (stable)**
