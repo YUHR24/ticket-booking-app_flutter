@@ -32,7 +32,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         type: .fixed,
         selectedItemColor: Colors.blueGrey,
         unselectedItemColor: Color(0xFF526400),
-        // showSelectedLabels: false,
+        // showSelectedLabels: false, 
 
         onTap: (value) {
           setState(() {
