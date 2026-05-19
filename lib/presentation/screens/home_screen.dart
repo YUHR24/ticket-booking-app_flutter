@@ -1,6 +1,8 @@
-import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:ticket_booking_app/config/themes/app_media.dart';
 import 'package:ticket_booking_app/config/themes/app_styles.dart';
+import 'package:ticket_booking_app/presentation/widgets/shared/double_text.dart';
+import 'package:ticket_booking_app/presentation/widgets/shared/search_form.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,29 +12,12 @@ class HomeScreen extends StatelessWidget {
     final size = MediaQuery.sizeOf(context);
 
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+      backgroundColor: AppStyles.bgColor,
 
-        leading: IconButton(
-          onPressed: () {},
-          icon: Icon(FluentIcons.star_24_filled, color: Colors.white),
-        ),
-
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(FluentIcons.folder_24_filled, color: Colors.white),
-          ),
-        ],
-
-        title: Text('Book Tickets', style: TextStyle(color: Colors.white)),
-        centerTitle: true,
-      ),
       body: ListView(
         children: [
           Container(
-            // color: Colors.blue,
-            padding: .symmetric(horizontal: 20),
+            padding: .only(left: 20, right: 20, top: 40),
             child: Column(
               children: [
                 Row(
@@ -49,31 +34,27 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
 
-                    // Text('Imageee'),
                     Container(
                       width: 50,
                       height: 50,
                       decoration: BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: .circular(10),
+                        image: DecorationImage(
+                          image: AssetImage(AppMedia.logo),
+                        ),
                       ),
                     ),
                   ],
                 ),
 
-                Row(
-                  mainAxisAlignment: .spaceBetween,
-                  children: [Text('ICON'), Text('HINTEXT')],
-                ),
-
-                Text('Buscador'),
+                //* SearchBox
+                SearchForm(),
               ],
             ),
           ),
-          Container(),
-          Container(),
-          Container(),
-          Container(),
+
+          SizedBox(height: 40),
+
+          DoubleText(bigText: 'Upcoming flights', smallText: 'View all'),
         ],
       ),
     );

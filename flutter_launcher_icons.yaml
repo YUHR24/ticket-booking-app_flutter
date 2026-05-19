@@ -1,6 +1,6 @@
 # flutter pub run flutter_launcher_icons
 flutter_launcher_icons:
-  image_path: "assets/icons/ticket_booking_icon2.png"
+  image_path: "assets/images/icons/ticket_booking_icon2.png"
 
   android: "launcher_icon"
   # image_path_android: "assets/icon/icon.png"
@@ -8,7 +8,7 @@ flutter_launcher_icons:
 
     # Android Adaptive Icon (opcional pero muy recomendado para Android 8+)
   # adaptive_icon_background: "#FFFFFF"  # o una imagen: "assets/icon/bg.png"
-  adaptive_icon_foreground: "assets/icons/ticket_booking_icon2.png"
+  adaptive_icon_foreground: "assets/images/icons/ticket_booking_icon2.png"
   # adaptive_icon_foreground_inset: 16
   # adaptive_icon_monochrome: "assets/icon/monochrome.png"
 
