@@ -7,6 +7,8 @@ class AppStyles {
   static Color bgColor = Color(0xFFEEEDF2);
   static Color textColor = Color(0xFF3B3B3B);
 
+  static Color ticketBlue = Color(0xFF526799);
+
   static TextStyle headLineStyle1 = TextStyle(
     fontSize: 26,
     fontWeight: .bold,

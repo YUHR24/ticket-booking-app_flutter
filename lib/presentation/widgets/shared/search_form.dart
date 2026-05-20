@@ -26,7 +26,6 @@ class _SearchFormState extends State<SearchForm> {
 
   @override
   Widget build(BuildContext context) {
-    final colors = Theme.of(context).colorScheme;
 
     final outlineInputBorder = OutlineInputBorder(
       borderRadius: BorderRadius.circular(10),
