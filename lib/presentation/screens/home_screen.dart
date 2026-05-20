@@ -3,6 +3,7 @@ import 'package:ticket_booking_app/config/themes/app_media.dart';
 import 'package:ticket_booking_app/config/themes/app_styles.dart';
 import 'package:ticket_booking_app/presentation/widgets/shared/double_text.dart';
 import 'package:ticket_booking_app/presentation/widgets/shared/search_form.dart';
+import 'package:ticket_booking_app/presentation/widgets/shared/ticket_view.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -48,13 +49,18 @@ class HomeScreen extends StatelessWidget {
 
                 //* SearchBox
                 SearchForm(),
+
+                SizedBox(height: 40),
+
+                DoubleText(bigText: 'Upcoming flights', smallText: 'View all'),
+
+                SizedBox(height: 40),
+
+                TicketView(),
+
               ],
             ),
           ),
-
-          SizedBox(height: 40),
-
-          DoubleText(bigText: 'Upcoming flights', smallText: 'View all'),
         ],
       ),
     );

@@ -50,7 +50,7 @@ class _SearchFormState extends State<SearchForm> {
     );
 
     return Padding(
-      padding: .only(top: 20),
+      padding: .only(top: 20 ),
       child: TextFormField(
         decoration: inputDecoration,
 
